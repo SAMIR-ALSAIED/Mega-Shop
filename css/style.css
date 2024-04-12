@@ -1,0 +1,510 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap'); */
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+
+}
+
+
+body{
+/* 
+    font-family: "Poppins", sans-serif; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+}
+
+#header{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    background-color: rgb(254, 255, 255);
+    box-shadow: 0px 0px 15px rgba(0,0,0 ,0.6);
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+}
+
+#header .logo{
+    text-decoration: none;
+    font-size:26px;
+    color: #fa5252;
+    font-weight: 500;
+}
+
+#navbar{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#navbar li{
+
+    list-style: none;
+    padding: 0 20px;
+    position: relative;
+}
+
+
+#navbar li a{
+
+    text-decoration: none;
+    font-size:19px;
+    color: black;
+    font-weight:400;
+    transition: .3s all;
+}
+
+#navbar li a:hover{
+
+    color: #fa5252;
+    
+}
+
+/* HOME */
+
+
+#home{
+
+    background: url("../imges/stock-photo-young-happy-couple-shopping-bags-city-having-fun-together.jpg");
+    width: 100%;
+    height:98vh;
+    background-size: cover;
+    background-position: top 20% right 100%; 
+
+    padding:0 130px;
+
+    display: flex;
+    align-items: center;
+  
+
+  
+    
+}
+
+#home .content{
+
+    position: relative;
+    bottom:20px;
+    
+}
+
+
+#home .content h3{
+
+    padding-bottom: 5px;
+    color: rgb(255, 254, 254);
+  
+}
+
+#home .content h4{
+    color: #fa5252;
+    font-size: 25px;
+    margin-bottom: 3px;
+} 
+
+#home .content h1{
+    margin-bottom: 5px;
+}
+
+#home .content button{
+
+    width: 180px;
+    height: 43px;
+    margin-top: 20px;
+    border: none;
+    background-color:black ;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+
+    border-radius:20px;
+    transition: .5s ease;
+}
+
+#home .content button:hover{
+    transform: scale(1.1);
+    
+}
+
+#fuetcer{
+    padding: 60px 150px;
+z-index: 800px;
+}
+
+#fuetcer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+#fuetcer .box{
+
+    padding:25px 15px; 
+    text-align: center;
+    width: 180px;
+
+    box-shadow: 0px 0px 15px rgb(0,0,0,0.3);
+    border: 3px solid rgb(216, 212, 212);
+    margin: 15px 0;
+    border-radius: 4px;
+    transition: .4s all;
+  
+    
+}
+#fuetcer .box img{
+    opacity:40%;
+}
+#fuetcer .box img:hover{
+    border-color: white;
+}
+
+#fuetcer .box:hover{
+
+    transform: scale(1.1);
+  
+
+}
+
+#fuetcer .box h5{
+
+    padding: 6px 8px 6px 9px;
+    background-color: #ef7979;
+    color: white;
+    height: 35px;
+    font-size: 15px;
+    margin-top: 9px;
+
+
+}
+
+#fuetcer .box h5:hover{
+
+    background-color: #cb4949;
+}
+
+/* producect */
+
+.products {
+
+    text-align: start;
+    margin: 5px;
+  
+}
+
+.products .container-pro{
+
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    flex-wrap: wrap;
+   
+}
+
+
+
+.products .product{
+
+   width: 270px;
+   height: 420px;
+    min-width: 250px ;
+
+    padding: 15px 10px;
+    border: 1px solid rgb(223, 219, 219);
+
+    box-shadow: 20px 10px 30px rgb(0,0,0 ,0.3);
+
+    margin:17px;
+
+    transition: 0.4s ease;
+    position: relative;
+    left: 1px;
+  
+}
+
+.products .product:hover{
+   
+    bottom: 15px;
+
+    background-color: rgb(227, 231, 231);
+}
+
+
+/* .products .product:hover{
+    box-shadow: 20px 20px 30px rgb(0,0,0 ,0.6);
+} */
+
+.products .product img{
+display:flex;
+    width: 100%;
+    height: 260px;
+   
+    border-radius:20px;
+    box-shadow:0px 0px 10px rgba(107, 102, 102, 0.3);
+    /* background-color: grey; */
+
+  
+}
+
+.products .title-pro{
+    text-align: center;
+ 
+  
+}
+
+
+.products .product .text-pro{
+
+    text-align: center;
+    padding: 10px 0;
+
+    
+}
+
+.products .product .text-pro span{
+
+ color: #4c566a;
+    font-size:19px;
+    font-weight: 700;
+}
+
+.products .product .text-pro h4{
+    padding-top: 10px;
+    font-size: 15px;
+    color: rgb(199, 201, 203);
+    
+}
+
+.products .product .star-icon i{
+
+    font-size:20px;
+    color: #ffa94d;
+}
+
+.products .product  h5{
+
+    font-size:17px;
+    font-weight: 700;
+    padding-top: 15px;
+    color: #cb4949;
+}
+
+.products .product .cart{
+font-size: 20px;
+
+}
+
+.products .product .cart i{
+
+    color: black;
+    line-height: 30px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(227, 229, 229);
+    text-align: center;
+    padding: 7px  0;
+
+    position: absolute;
+    bottom: 5px;
+   right:10px;
+   transition: .8s ease;
+
+}
+
+.products .product .cart i:hover{
+
+    color: #fa5252;
+    background-color: #4c566a;
+    transform: rotate(360deg);
+}
+
+/* news footer */
+
+
+.news-foo{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #3b4252;
+    height: 20vh;
+    margin-top: 200px;
+    padding: 0 90px;
+    width: 100%;
+}
+
+.news-foo .text-news{
+   position: relative;
+   right: 50px;
+
+}
+.news-foo .text-news h4{
+
+    color: white;
+    font-size:21px;
+    padding-left: 30px;
+margin-bottom: 8px;
+}
+
+.news-foo .text-news p{
+
+    color: rgb(181, 186, 189);
+}
+
+.news-foo .form{
+    margin-left: 50px;
+}
+.news-foo .form input{
+   flex-wrap: nowrap;
+    width:350px;
+    height: 47px;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.news-foo .form input:hover{
+
+    border: 3px solid rgb(163, 163, 163);
+    width: 400px;
+}
+
+.news-foo .form button{
+
+    width: 130px;
+    height: 45px;
+    margin-left: 6px;
+    font-size: 18px;
+    border: none;
+    background-color: rgb(13, 163, 138);
+    color: white;
+}
+.news-foo .form button:hover{
+    background-color: rgb(7, 119, 100);
+}
+
+/*  footer */
+
+
+.footer{
+
+  
+    padding: 60px 90px;
+  
+    background-color: rgb(233, 234, 235);
+
+
+}
+
+
+.container{
+
+    max-width: 1170px;
+
+    margin: auto;
+    text-align: center;
+   
+
+
+  
+
+}
+ul{
+    list-style: none;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer .footer-col{
+
+    width: 25%;
+    padding: 70px 0;
+}
+
+ .footer-col  a{
+    
+    color: rgb(79, 77, 77);
+    text-decoration: none;
+  padding: 15px 0;
+}
+
+.footer  .footer-col a{
+
+    font-size: 20px;
+    font-weight: 400;
+    transition: .3s ease;
+} 
+
+
+
+.footer  .footer-col h3{
+
+    margin-bottom: 8px;
+}
+.footer  .footer-col h4{
+
+    margin-bottom: 8px;
+}
+
+.footer  .footer-col .con{
+    margin-bottom:8px ;
+}
+
+
+.footer  .footer-col .pp{
+
+    position: relative;
+    right: 20px;
+}
+
+.footer  .footer-col p{
+
+    font-size: 17px;
+    color: rgb(79, 77, 77);
+    font-weight: 500;
+}
+
+
+.footer .footer-col .social a i{
+
+
+color:#fa5252;
+line-height: 30px;
+width: 40px;
+height: 40px;
+border-radius: 20px;
+background-color: rgb(182, 182, 182);
+text-align: center;
+padding: 7px  0;
+
+margin:6px;
+margin-top:20px;
+right:10px;
+transition: .8s ease;
+
+}
+
+
+.footer .footer-col .social a i:hover{
+    color: #fa5252;
+    background-color: #4c566a;
+    transform: rotate(360deg);
+
+}
